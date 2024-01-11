@@ -1,0 +1,209 @@
+    /*Root*/
+    :root {
+        --purple-900: #BD4071;
+        --purple-800: #CD2C6B;
+        --purple-700: #9bb1ff;
+        --purple-600: #bfd7ff;
+        --purple-500: #E4AFC0;
+    }
+
+    /* geral */
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        /* height: 100vh; */
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span {
+        margin: 0;
+        color: rgb(80, 80, 80)
+    }
+
+    li {
+        list-style: none;
+
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /*HEADER*/
+    .header-container {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 16.5rem;
+        background-color: var(--purple-900);
+    }
+
+    .header-container .logo-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+
+    .navpginicial {
+        background-color: var(--purple-500);
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1.0rem;
+    }
+
+    .navpginicial-content {
+        display: flex;
+        padding-top: 0.5rem;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 20vw;
+        margin: 0 auto;
+    }
+
+
+    .navpginicial ul {
+        display: flex;
+        gap: 2.4rem;
+        align-items: center;
+        justify-content: flex-start;
+
+
+
+    }
+
+    .navpginicial ul li a {
+        text-decoration: none;
+        color: #571089;
+        font-size: 2rem;
+        transition: all 0.3s ease-in;
+        font-weight: bold;
+    }
+
+    .navpginicial ul li a:hover {
+        color: var(--purple-800);
+    }
+
+    .contato {
+        border-radius: 5px;
+        border: 0.1rem solid #000;
+        padding: 1.0rem 2.0rem;
+        background: transparent;
+        text-align: center;
+        /* color: rgb(255, 0, 0); */
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        font-style: none;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Anton', sans-serif;
+    }
+
+    .contato:hover {
+        background-color: #000;
+        color: var(--purple-900);
+    }
+
+    .btn-danger {
+        background-color: transparent !important;
+        color: #000;
+        border: none;
+    }
+
+    .btn-danger:focus {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-danger:hover {
+        background-color: #000 !important;
+        color: var(--purple-500);
+    }
+
+    .shop-icon {
+        padding-left: 0.5rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .cart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main-banner {
+        width: 100%;
+    }
+
+    .bannerpgninicial {
+        width: auto;
+    }
+
+    .bannerprincipal {
+        width: 100%;
+        background-size: cover;
+    }
+
+    .parallax {
+        /* The image used */
+        background-image: url("./src/assets/banner.jpg");
+        /* Set a specific height */
+        min-height: 80.0rem;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-items: end;
+        justify-content: end;
+    }
+
+    .banner-blur {
+
+        width: 100%;
+        height: 20.0rem;
+        background-color: rgba(255, 255, 255, .5);
+    }
+
+    /*Resolver margin top*/
+    .text-blur {
+        margin-top: 5.0rem;
+        text-align: center;
+        color: #000;
+        font-size: 5.0rem;
+        font-weight: bold;
+    }
+
+    .entre{
+        width: 500px;
+    }

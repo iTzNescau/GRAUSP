@@ -1,0 +1,632 @@
+    /*Root*/
+    :root {
+        --purple-900: #2F3336;
+        --purple-800: #4e4e4e;
+        --purple-700: #ffffff;
+        --purple-600: #ffffff;
+        --purple-500: #ffffff;
+    }
+
+    /* geral */
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+S
+    body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        /* height: 100vh; */
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span {
+        margin: 0;
+        color: rgb(80, 80, 80)
+    }
+
+    li {
+        list-style: none;
+
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /*HEADER*/
+    .header-container {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 16.5rem;
+        background-color: var(--purple-900);
+        border-bottom: 3px solid #ffffff;
+    }
+
+    .header-container .logo-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+
+    .navpginicial {
+        background-color: var(--purple-500);
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1.0rem;
+    }
+
+    .navpginicial-content {
+        display: flex;
+        padding-top: 0.5rem;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 20vw;
+        margin: 0 auto;
+        height: 45px;
+    }
+
+
+    .navpginicial ul {
+        display: flex;
+        gap: 2.4rem;
+        align-items: center;
+        justify-content: flex-start;
+
+
+
+    }
+
+    .navpginicial ul li a {
+        text-decoration: none;
+        color: #616161;
+        font-size: 2rem;
+        transition: all 0.3s ease-in;
+        font-weight: bold;
+    }
+
+    .navpginicial ul li a:hover {
+        color: var(--purple-800);
+    }
+
+    .contato {
+        border-radius: 5px;
+        border: 0.1rem solid #ffffff;
+        padding: 1.0rem 2.0rem;
+        background: transparent;
+        text-align: center;
+        color: rgb(255, 255, 255); 
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        font-style: none;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Anton', sans-serif;
+    }
+
+    .contato:hover {
+        background-color: #ffffff;
+        color: var(--purple-900);
+    }
+
+    .btn-danger {
+        background-color: transparent !important;
+        color: #000;
+        border: none;
+    }
+
+    .btn-danger:focus {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-danger:hover {
+        background-color: #000 !important;
+        color: var(--purple-500);
+    }
+
+    .shop-icon {
+        padding-left: 0.5rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .cart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main-banner {
+        width: 100%;
+    }
+
+    .bannerpgninicial {
+        width: auto;
+    }
+
+    .bannerprincipal {
+        width: 100%;
+        background-size: cover;
+    }
+
+    .parallax {
+        /* The image used */
+        background-image: url("./src/assets/banner.jpg");
+        /* Set a specific height */
+        min-height: 80.0rem;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-items: end;
+        justify-content: end;
+    }
+
+    .banner-blur {
+
+        width: 100%;
+        height: 20.0rem;
+        background-color: rgba(255, 255, 255, .5);
+    }
+
+    /*Resolver margin top*/
+    .text-blur {
+        margin-top: 5.0rem;
+        text-align: center;
+        color: #000;
+        font-size: 5.0rem;
+        font-weight: bold;
+    }
+
+    #quem-somos-nos-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #ff8fab;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding: 10.0rem;
+        height: 100rem;
+        gap: 2.0rem;
+        width: 100%;
+    }
+
+    #quem-somos-nos-container h2 {
+        width: 100%;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-weight: 700;
+        font-size: 2cm;
+        font-family: 'Mingzat', sans-serif;
+        padding-bottom: 1rem;
+    }
+
+    #quem-somos-nos-container h3 {
+        font-weight: 500;
+        font-size: 1cm;
+        color: #fff;
+    }
+
+    #quem-somos-nos-container p {
+        color: #fff;
+        font-size: 20rem;
+        width: 100rem;
+        font-weight: 600;
+        font: normal normal normal 18px/1.987em helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    }
+
+    .Produtopginiciald {
+        background: linear-gradient(to right, #d0467d , #BD4071 , #d0467d );
+        position: relative;
+        width: 100%;
+        margin-left: calc((100% - 100%) *0.00);
+        height: 222rem;
+    }
+
+    .data-quemSomos {
+        word-spacing: -2.4rem;
+    }
+
+
+
+
+
+
+
+    .entre {
+        width: 500px;
+
+    }
+
+    .frase {
+
+        padding-left: 50rem;
+        padding-top: 100px;
+        width: 100%;
+        height: 28rem;
+        align-items: center;
+        background-color: #ffb3c6;
+        
+    }
+
+    .frase h1 {
+        color: #000;
+        font-style: italic;
+
+    }
+
+    .frase h2 {
+        color: #000;
+        padding-left: 20rem;
+        padding-top: 4rem;
+        font-weight: bold; 
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .mapa .map {
+        width: 100%;
+        /*padding-top: ;*/
+    }
+
+    .copright {
+        height: 30rem;
+        width: 100%;
+    }
+
+    .text {
+        
+        /* padding-left: 60rem; */
+        /* padding-top: 25rem; */
+        display: flex;
+        /* position: absolute; */
+
+    }
+
+    .form {
+        padding-top: 3rem;
+        align-items: center;
+        padding-left: 10rem;
+        width: 30rem;
+        height: 50rem;
+        max-height: 450px;
+        margin-right: 300px;
+    }
+
+    .ajudar {
+        width: 60rem;
+        color: #571089;
+        font-size: 50px;
+        font-family: 'Anton', sans-serif;
+        font-style: bold;
+    }
+
+    .av {
+        text-decoration: underline;
+        padding-top: 10px;
+        width: 500px;
+    }
+
+    .mat {
+        text-decoration: underline;
+        padding-top: 10px;
+    }
+
+    .cel {
+        text-decoration: underline;
+        padding-top: 10px;
+        padding-bottom: 100px;
+    }
+
+    .contat {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        max-height: 500px;
+        max-width: 400px;
+
+    } 
+
+
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        padding-right: 20rem;
+        font-size: 32px;
+        font-family: 'Anton', sans-serif;
+        color: #571089; 
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    .copright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+        margin-top: 200px;
+        height: 1px ;
+        border-top: #000 solid 2px;
+        border-color: #000;
+    }
+
+    .btn-enviar{
+        background-color: #000;
+    }
+
+    .formdiv{
+        width: 600px;
+    }
+
+    .titulo{
+        font-size: 50px;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Anton', sans-serif;
+    }
+    
+    .textoaud{
+        color: #000;
+    }
+
+    .method1{
+        max-width: 2000;
+        width: 1400px;
+        padding-left: 800px;
+        padding-top: 100px;  
+        justify-content: space-between;
+    
+    }
+
+    .method2{
+        width: 700px;
+        padding-left: 50px;
+        padding-top: 50px;
+        justify-content: space-between;      
+    }
+
+    .method3{
+        width: 1400px;
+        padding-left: 800px;
+        padding-top: 50px;       
+    }
+
+    .method4{
+        width: 700px;
+        padding-left: 50px;
+        padding-top: 50px;
+        justify-content: space-between;         
+    }
+
+    .primeira{
+        color: #000;
+        font-size: 22px;
+        border: 3px solid #000;
+        border-radius: 12px;
+        background-color: #ffb3c634;
+        text-align: center;
+        font-family: 'Bahnschrift Condensed';
+    }
+
+    .segunda{
+        color: #000;
+        font-size: 22px;
+        border: 3px solid #000;
+        text-align: center;  
+        background-color: #ffb3c634;
+        border-radius: 12px;
+        font-family: 'Bahnschrift Condensed';
+    }
+
+    .terceira{
+        color: #000;
+        font-size: 22px;
+        border: 3px solid #000; 
+        text-align: center; 
+        background-color: #ffb3c634;
+        border-radius: 12px;
+        font-family: 'Bahnschrift Condensed';
+    }
+
+    .quarta{
+        color: #000;
+        font-size: 22px;
+        border: 3px solid #000;
+        border-radius: 12px;  
+        text-align: center;
+        background-color: #ffb3c634;
+        font-family: 'Bahnschrift Condensed';
+    }
+
+    .catalogo{
+        display: flex;
+        justify-items: right;
+        justify-content: right;
+        text-align: right;
+        width: 98%;
+        /* pointer-events: stroke;  */
+        padding-top: 10px;
+        margin-right: 2px;
+        /* padding-left: 65%; */
+        text-decoration: none;
+        font-style: none;
+        font-size: 30px;
+        transition: color 50s;
+        color: #000;
+        font-weight: bold;
+        /* padding-bottom: 10px; */
+    }
+
+    .doec{
+        padding-left: 550px;
+        padding-top: 50px;
+        font-size: 40px;
+        color: #000;
+        font-style: italic;
+        font-family: 'Mingzat', sans-serif;
+        font-weight: bold;
+    }
+
+    .pontoc{
+        font-weight: bold;
+        
+    }
+
+    .entenda{
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    .econon{
+        color: rgb(3, 104, 3);
+        font-weight: bold;
+    }
+
+    .optbt{
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    .comonos{
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    .livrodi{
+        height: 150px;
+        width: 170px;
+    }
+
+    .img{
+        float: right;
+        padding-right: 10px;
+    }
+
+    .img2{
+        float: left;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    
+    
+    .img4{
+        float: left;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    
+
+    .higiene{
+        height: 150px;
+        width: 150px;
+    }
+
+    .ajuda{
+        height: 150px;
+        width: 150px;
+    }
+
+    .titulo1{
+        width: 750px;
+        font-size: 38px;
+        padding-left: 50px;
+        padding-top: 180px;
+        display: flex;
+        float: left;
+        color: #feacc0;
+        text-align: center;
+        font-family: 'Bahnschrift Condensed'; 
+    }
+
+    .titulo2{
+        width: 950px;
+        font-size: 46px;
+        padding-left: 150px;
+        padding-top: 220px;
+        display: flex;
+        float: right;        
+        color: #feacc0;
+        text-align: center;
+        font-family: 'Bahnschrift Condensed';
+    }
+
+    .titulo3{
+        width: 750px;
+        font-size: 50px;
+        padding-left: 350px;
+        padding-top: 80px;
+        display: flex;
+        float: left;
+        color: #feacc0;
+        text-align: center;
+        font-family: 'Bahnschrift Condensed'; 
+    }
+
+    .titulo4{
+        width: 750px;
+        font-size: 50px;
+        padding-left: 100px;
+        padding-top: 250px;
+        display: flex;
+        float:right;
+        color: #feacc0;
+        text-align: center;
+        font-family: 'Bahnschrift Condensed';  
+    }
+
+    .boxalfi1{
+        float: left;
+        padding-left: 10px;
+        padding-top: 5px
+    }
+
+    .alfi1{
+        width: 35px;
+        height: 35px;
+    }
+
+    .boxalfi2{
+        float: right;
+        padding-right: 10px;
+        padding-top: 5px
+    }
+
+    .alfi2{
+        width: 35px;
+        height: 35px;
+    }
+    
